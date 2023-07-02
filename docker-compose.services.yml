@@ -1,0 +1,29 @@
+version: '3.5'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: biz-control-pro-db
+    environment:
+      MYSQL_ROOT_PASSWORD: randompassword
+      MYSQL_DATABASE: bizcontrolprodb
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+  # minio:
+  #   image: minio/minio:latest
+  #   container_name: biz-control-pro-minio
+  #   ports:
+  #     - "9000:9000"
+  #     - "9090:9090"
+  #   volumes:
+  #     - minio_data:/data
+  #   environment:
+  #     MINIO_ACCESS_KEY: minio
+  #     MINIO_SECRET_KEY: minio123
+  #   command: server --console-address ":9090" /data
+
+volumes:
+  minio_data:
+  mysql-data:
