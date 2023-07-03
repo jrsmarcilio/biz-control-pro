@@ -19,6 +19,7 @@
 
 > An awesome project based on Ts.ED framework
 
+
 ## Getting started
 
 > **Important!** Ts.ED requires Node >= 14, Express >= 4 and TypeScript >= 4.
@@ -34,6 +35,7 @@ $ yarn start
 $ yarn build
 $ yarn start:prod
 ```
+
 
 ## Docker
 
@@ -53,6 +55,21 @@ docker compose down
 # remove Ts.ED image
 docker compose down --rmi all
 ```
+
+
+## Swagger
+
+A swagger documentation is available on the `/api-docs` endpoint.
+
+> [swagger/docs](http://localhost:8083/api-docs/)
+
+
+## Insomnia
+
+Import the file `Insomnia.json` into [Insomnia](https://insomnia.rest/download) to test the API.
+
+> [Insomnia](./Insomnia.json)
+
 
 ## Barrelsby
 
