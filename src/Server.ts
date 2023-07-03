@@ -3,6 +3,7 @@ import { PlatformApplication } from "@tsed/common";
 import { Configuration, Inject } from "@tsed/di";
 import "@tsed/passport";
 import "@tsed/platform-express"; // /!\ keep this import
+import "@tsed/swagger"; // import swagger Ts.ED module
 import session from "express-session";
 import passport from "passport";
 import { join } from "path";
@@ -41,9 +42,11 @@ const rootDir = process.cwd();
   passport: {
     userInfoModel: User,
   },
-  componentsScan: [
-    `${rootDir}/src/services/**/*.ts`,
-    `${rootDir}/src/protocols/**/*.ts`
+  swagger: [
+    {
+      path: "/docs",
+      specVersion: "3.0.1",
+    },
   ],
 })
 export class Server {

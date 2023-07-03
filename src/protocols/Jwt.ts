@@ -10,7 +10,7 @@ import { UsersService } from "../services/User";
   useStrategy: Strategy,
   settings: {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: process.env.SECRET,
+    secretOrKey: process.env.SECRET ?? "secret",
     issuer: "localhost",
     audience: "localhost",
   },

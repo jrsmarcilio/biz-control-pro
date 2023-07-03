@@ -34,7 +34,10 @@ export class CategoriesController {
   @Put("/:id")
   @Summary("Update a category")
   @Authenticate("jwt")
-  async updateCategory(@PathParams("id") id: string, @BodyParams() data: Prisma.CategoryUpdateInput) {
+  async updateCategory(
+    @PathParams("id") id: string,
+    @BodyParams() data: Prisma.CategoryUpdateInput
+  ) {
     return this.service.updateCategory(id, data);
   }
 

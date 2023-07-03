@@ -329,6 +329,14 @@
     semver "^7.3.5"
     tslib "2.3.1"
 
+"@tsed/normalize-path@7.30.1":
+  version "7.30.1"
+  resolved "https://registry.yarnpkg.com/@tsed/normalize-path/-/normalize-path-7.30.1.tgz#b5a0abf330a11f91317ee6c920bb05d38dac03b2"
+  integrity sha512-4bM6Rp0JnmSLwmQBuEoAWmwi/l/iSElLEtEFTtgmOBaQfYh9SNS7Ww0Vn29cJmeFF3dgtW7MkXCMeVfQyYBvEg==
+  dependencies:
+    normalize-path "3.0.0"
+    tslib "2.5.0"
+
 "@tsed/openspec@7.30.1", "@tsed/openspec@^7.30.1":
   version "7.30.1"
   resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-7.30.1.tgz#3b8da1dbf7db24e1c22725d676c2875b0a1d517d"
@@ -434,6 +442,19 @@
     json-schema "0.4.0"
     picomatch "2.3.1"
     statuses ">=2.0.1"
+    tslib "2.5.0"
+
+"@tsed/swagger@^7.30.1":
+  version "7.30.1"
+  resolved "https://registry.yarnpkg.com/@tsed/swagger/-/swagger-7.30.1.tgz#ee7978eb917a59ed01f1f837be20f0c424345e23"
+  integrity sha512-qL7Oi2VL99RtfQZe31gE31THuf1FJaaVF68PPhZPra87Vd4RBD2eccnpuDd042TH+aFA8lgCLT2Izl5fywHMfw==
+  dependencies:
+    "@tsed/normalize-path" "7.30.1"
+    "@tsed/openspec" "7.30.1"
+    filedirname "^2.7.0"
+    fs-extra "10.0.1"
+    micromatch "4.0.5"
+    swagger-ui-dist "^4.5.2"
     tslib "2.5.0"
 
 "@types/body-parser@*":
@@ -651,6 +672,11 @@
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
+
+"@types/swagger-schema-official@^2.0.22":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@types/swagger-schema-official/-/swagger-schema-official-2.0.22.tgz#f7e06168e6994574dfd86928ac04b196870ab043"
+  integrity sha512-7yQiX6MWSFSvc/1wW5smJMZTZ4fHOd+hqLr3qr/HONDxHEa2bnYAsOcGBOEqFIjd4yetwMOdEDdeW+udRAQnHA==
 
 "@types/yargs-parser@*":
   version "21.0.0"
@@ -2339,7 +2365,7 @@ normalize-package-data@^2.5.0:
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
-normalize-path@^3.0.0, normalize-path@~3.0.0:
+normalize-path@3.0.0, normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
@@ -3122,6 +3148,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swagger-ui-dist@^4.5.2:
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-4.19.1.tgz#c6d53ba0961a006c6b6b4323ba700e87f31da856"
+  integrity sha512-n/gFn+R7G/BXWwl5UZLw6F1YgWOlf3zkwGlsPhTMhNtAAolBGKg0JS5b2RKt5NI6/hSopVaSrki2wTIMUDDy2w==
 
 tar-stream@^2.2.0:
   version "2.2.0"
